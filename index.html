@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style/normalize.css" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <title>LevelUp</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-body">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">Level Up</div>
+          <nav class="main-menu">
+            <ul>
+              <li><a href="#composition-product">Состав</a></li>
+              <li><a href="#feedback">Отзывы</a></li>
+              <li><a href="#promo">Промо</a></li>
+              <li><a href="#form">Заказать</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="promo">
+          <div class="promo-text">
+            <div class="promo-title">
+              Препарат
+              <p class="logo">Level up</p>
+            </div>
+            <p class="promo-feature">Характеристика:</p>
+            <ul class="feature-list">
+              <li class="feature-item">Lorem ipsum dolor</li>
+              <li class="feature-item">Lorem ipsum dolor</li>
+              <li class="feature-item">Lorem ipsum dolor</li>
+            </ul>
+            <a href="#form" class="btn btn-purple">Приобрести</a>
+          </div>
+          <div class="promo-img">
+            <img src="./assets/img/prod.png" alt="" width="400" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <video preload="auto" autoplay loop muted class="bgvideo" id="bgvideo">
+      <source src="./assets/video/video.mp4" type="video/mp4" />
+    </video>
+  </header>
+
+  <section class="composition-product" id="composition-product">
+    <div class="container">
+      <div class="composition-product__block" style="
+						display: flex;
+						justify-content: space-around;
+						background-color: rgb(237, 248, 20);
+						align-items: center;
+					">
+        <ul>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="composition-product__img">Продукт в центре картинка</div>
+
+        <ul>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+          <li class="composition-product__item">
+            <div>
+              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+              <div>qwdqw</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <h2 class="feedback-title">Отзывы выпускников</h2>
+      <a href="#" class="feedback-all">Показать все</a>
+      <div class="feedback-item">
+        <div class="feedback-author">
+          <img src="img/user.jpg" width="133" height="133" alt="Иванов Петр" />
+          <h3>Иванов Петр Сергеевич</h3>
+          <p>
+            Группа: 04-И-15<br />
+            Выпуск: 2009 г.
+          </p>
+        </div>
+        <blockquote class="feedback-content">
+          <h3>Тяжело в учении, легко в бою!</h3>
+          <p>
+            Во время обучения было очень тяжело, практические занятия требовали усидчивости и
+            гибкости ума. Однако, по прошествии времени, понял, что все это было не зря! Устроился
+            в ведущую студию своего города сразу после выпуска, а проработав там три года основал
+            свою собственную!
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo" id="promo">
+    <div class="container">
+      <h2 class="contacts-title">Обратная связь</h2>
+      <header class="main-header">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo">LevelUp</div>
+          </div>
+
+          <div class="promo">
+            <div class="promo-text">
+              <div class="promo-title">Level up</div>
+              <ul>
+                Характеристика
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <a href="#form" class="btn btn-purple">Приобрести</a>
+            </div>
+            <div class="promo-img">
+              <img src="./assets/img/prod.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+
+  <section class="contacts" id="form">
+    <div class="container">
+      <h2 class="contacts-title">Обратная связь</h2>
+      <form class="contacts-form" action="" method="post">
+        <table>
+          <tr>
+            <td class="title">
+              <label for="fullname">ФИО:</label>
+            </td>
+            <td class="field">
+              <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста" />
+            </td>
+          </tr>
+          <tr>
+            <td class="title">
+              <label for="age">Возраст:</label>
+            </td>
+            <td class="field">
+              <input type="text" id="age" name="age" placeholder="Укажите возраст, хотя бы приблизительно" />
+            </td>
+          </tr>
+          <tr>
+            <td class="title">Пол:</td>
+            <td class="field">
+              <label><input type="radio" id="man" name="sex" value="man" /> Мужской</label>
+              <label><input type="radio" id="woman" name="sex" value="woman" /> Женский</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="title">
+              <label for="message">Вопрос:</label>
+            </td>
+            <td class="field">
+              <textarea id="message" name="message" placeholder="Сообщите все, что считаете нужным"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="title"></td>
+            <td class="field">
+              <input type="submit" class="btn btn-green" value="Отправить" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div class="contacts-instruction">
+        <h3>Заинтересовались обучением на нашей кафедре?</h3>
+        <p>Заполните короткую форму обратной связи и отправьте нам.</p>
+        <p>Мы подготовим для вас индивидуальное предложение и выйдем на связь!</p>
+        <p class="contacts-alert">
+          <strong>Внимание!</strong> Все поля обязательны для заполнения.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
