@@ -28,7 +28,7 @@
           <div class="promo-text">
             <div class="promo-title">
               Препарат
-              <p class="logo">Level up</p>
+              <p class="logo promo-logo">Level up</p>
             </div>
             <p class="promo-feature">Характеристика:</p>
             <ul class="feature-list">
@@ -51,53 +51,39 @@
 
   <section class="composition-product" id="composition-product">
     <div class="container">
-      <div class="composition-product__block" style="
-						display: flex;
-						justify-content: space-around;
-						background-color: rgb(237, 248, 20);
-						align-items: center;
-					">
-        <ul>
+      <div class="composition-product__block">
+        <ul class="composition-product__list">
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
         </ul>
 
-        <div class="composition-product__img">Продукт в центре картинка</div>
+        <div class="composition-product__img">
+          <img src="/assets/img/prod.png" width="150">
+          <a href="#form" class="btn btn-purple">Приобрести</a>
+        </div>
 
-        <ul>
+        <ul class="composition-product__list">
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
           <li class="composition-product__item">
-            <div>
-              <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-              <div>qwdqw</div>
-            </div>
+            <img src="./assets/img/doctor.png" alt="" width="100" height="100" />
+            <span>Lorem</span>
           </li>
         </ul>
       </div>
@@ -106,31 +92,73 @@
 
   <section class="feedback" id="feedback">
     <div class="container">
-      <h2 class="feedback-title">Отзывы выпускников</h2>
-      <a href="#" class="feedback-all">Показать все</a>
-      <div class="feedback-item">
-        <div class="feedback-author">
-          <img src="img/user.jpg" width="133" height="133" alt="Иванов Петр" />
-          <h3>Иванов Петр Сергеевич</h3>
-          <p>
-            Группа: 04-И-15<br />
-            Выпуск: 2009 г.
-          </p>
+
+      <div class="wrapper">
+        <div class="slider-container">
+          <div class="slider-track">
+
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
+                  <h3>Иванов Петр Сергеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum error consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit mollitia exercitationem quis debitis facilis.
+                    Libero similique voluptate labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
+                  <h3>Большаков Тимофей Матвеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum error consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit mollitia exercitationem quis debitis facilis.
+                    Libero similique voluptate labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
+                  <h3>Кузнецов Богдан Арсентьевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum error consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit mollitia exercitationem quis debitis facilis.
+                    Libero similique voluptate labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            
+
+          </div>
         </div>
-        <blockquote class="feedback-content">
-          <h3>Тяжело в учении, легко в бою!</h3>
-          <p>
-            Во время обучения было очень тяжело, практические занятия требовали усидчивости и
-            гибкости ума. Однако, по прошествии времени, понял, что все это было не зря! Устроился
-            в ведущую студию своего города сразу после выпуска, а проработав там три года основал
-            свою собственную!
-          </p>
-        </blockquote>
+        <div class="slider-btn">
+          <button class="btn  btn-prev">Prev</button>
+          <button class="btn  btn-next">Next</button>
+        </div>
       </div>
+
+
     </div>
   </section>
 
-  <section class="promo" id="promo">
+  <!-- <section class="promo" id="promo">
     <div class="container">
       <h2 class="contacts-title">Обратная связь</h2>
       <header class="main-header">
@@ -157,9 +185,9 @@
         </div>
       </header>
     </div>
-  </section>
+  </section> -->
 
-  <section class="contacts" id="form">
+  <!-- <section class="contacts" id="form">
     <div class="container">
       <h2 class="contacts-title">Обратная связь</h2>
       <form class="contacts-form" action="" method="post">
@@ -212,6 +240,8 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <script src="./assets/js/slider.js"></script>
 </body>
 </html>
