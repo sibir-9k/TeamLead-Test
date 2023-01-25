@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	min-width: 1000px;
 	margin: 0;
@@ -18,17 +15,15 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
-	background-color: rgba(128, 0, 128, 0.4);
+	background-color: rgba(128, 0, 128, 0);
 	scroll-behavior: smooth;
 }
-
 .container {
 	width: 980px;
 	margin: 0 auto;
 	padding: 0 10px;
 	overflow: hidden;
 }
-
 .main-header {
 	position: relative;
 	min-width: 100vh;
@@ -41,7 +36,6 @@ body {
 	background-size: cover;
 	overflow: hidden;
 }
-
 .bgvideo {
 	position: absolute;
 	left: 0;
@@ -51,7 +45,6 @@ body {
 	object-fit: cover;
 	z-index: -9999;
 }
-
 .header-body {
 	position: relative;
 	z-index: 100;
@@ -75,7 +68,6 @@ body {
 	color: gold;
 	-webkit-text-stroke: 0.5px black;
 }
-
 .main-menu {
 	float: right;
 	width: 680px;
@@ -83,13 +75,11 @@ body {
 	display: flex;
 	justify-content: flex-end;
 }
-
 .main-menu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-
 .main-menu li {
 	display: inline-block;
 	margin-right: 40px;
@@ -97,22 +87,17 @@ body {
 	font-size: 30px;
 	line-height: 24px;
 }
-
 .main-menu a {
 	color: gold;
-	/* -webkit-text-stroke: 0.5px black; */
 	text-decoration: none;
 }
-
 .main-menu a:hover {
 	text-decoration: underline;
 }
-
 .main-menu a:active {
 	text-decoration: none;
 	opacity: 0.3;
 }
-
 .promo {
 	width: 100%;
 	display: flex;
@@ -120,15 +105,17 @@ body {
 	align-items: center;
 }
 .promo-text {
-	width: 270px;
+	width: 350px;
 }
 .promo-title {
 	margin-bottom: 50px;
 	font-weight: 400;
 	font-size: 40px;
-  /* -webkit-text-stroke: 0.1px gold; */
 }
-
+.promo-logo {
+	font-size: 79px;
+	font-weight: 700;
+}
 .promo-feature {
 	margin-bottom: 20px;
 	font-weight: 300;
@@ -138,12 +125,11 @@ body {
 	margin-bottom: 50px;
 }
 .feature-item {
-  margin-left: 14px;
+	margin-left: 14px;
 	font-size: 25px;
 	font-weight: 300;
-  list-style-type: circle;
+	list-style-type: circle;
 }
-
 .btn {
 	display: inline-block;
 	padding: 20px;
@@ -162,7 +148,101 @@ body {
 	color: gold;
 }
 .btn-purple {
+	border-radius: 5%;
 	background-color: rgb(128, 0, 128);
 }
-.promo-img {
+/*////////////////////// 2 SECTIONS //////////////////////////*/
+.composition-product {
+	padding: 22px 0 22px;
 }
+.composition-product__block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.composition-product__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.composition-product__item img {
+	background-color: rgb(128, 0, 128);
+	border-radius: 50%;
+}
+
+.composition-product__img {
+	display: flex;
+	flex-direction: column;
+}
+.composition-product__img img {
+	margin-bottom: 30px;
+}
+/*////////////////////// 2 SECTIONS //////////////////////////*/
+
+/*///////////////////// 3 SECTIONS //////////////////////////*/
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.slider-container {
+	/* overflow: hidden; */
+	/* width: 900px;
+  margin: 0 auto; */
+}
+.slider-track {
+	display: flex;
+	transition: 0.2s;
+}
+.slider-btn {
+	text-align: center;
+}
+.feedback {
+	background-color: rgb(128, 0, 128);
+	padding: 25px 0 25px;
+}
+.feedback-container {
+	margin-right: 25px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+/* .feedback-container:nth-child(odd) {
+	/* margin-right: 5px; */
+} */
+.feedback-container:last-child {
+	margin-right: 0px;
+}
+/* .feedback-title {
+}
+.feedback-all {
+} */
+.feedback-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.feedback-author {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.feedback-content {
+  padding: 15px;
+}
+
+.btn-next,
+.btn-prev {
+	background-color: rgb(128, 0, 128);
+	border: 1px solid gold;
+	color: gold;
+	border-radius: 10px;
+}
+
+.disabled {
+	background-color: rgb(131, 129, 129);
+}
+/*/////////////////// 3 SECTIONS ////////////////*/
