@@ -1,256 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/style/normalize.css" />
-		<link rel="stylesheet" href="./assets/style/style.css" />
-		<title>LevelUp</title>
-	</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style/normalize.css" />
 
-	<body>
-		<header class="main-header">
-			<div class="header-body">
-				<div class="container">
-					<div class="header-top">
-						<div class="logo">Level Up</div>
-						<nav class="main-menu">
-							<ul>
-								<li><a href="#composition-product">Состав</a></li>
-								<li><a href="#feedback">Отзывы</a></li>
-								<li><a href="#description">Описание</a></li>
-								<li><a href="#form">Заказать</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="promo">
-						<div class="promo-text">
-							<div class="promo-title">
-								<span>Препарат</span>
-								<p class="promo-logo">LevelUp</p>
-							</div>
-							<p class="promo-feature">Характеристика:</p>
-							<ul class="feature-list">
-								<li class="feature-item">Lorem ipsum dolor</li>
-								<li class="feature-item">Lorem ipsum dolor</li>
-								<li class="feature-item">Lorem ipsum dolor</li>
-							</ul>
-							<a href="#form" class="btn btn-purple">Приобрести</a>
-						</div>
-						<div class="promo-img">
-							<img src="./assets/img/prod.png" alt="" width="400" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<video preload="auto" autoplay loop muted class="bgvideo" id="bgvideo">
-				<source src="./assets/video/video.mp4" type="video/mp4" />
-			</video>
-		</header>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-		<section class="composition-product" id="composition-product">
-			<div class="container">
-				<div class="composition-product__block">
-					<ul class="composition-product__list">
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-					</ul>
-					<div class="composition-product__img">
-						<div class="composition-product__line-img">
-							<div class="line line1"></div>
-							<div class="line line2"></div>
-							<div class="line line3"></div>
-							<img src="/assets/img/prod.png" width="150" />
-							<div class="line line4"></div>
-							<div class="line line5"></div>
-							<div class="line line6"></div>
-						</div>
-						<a href="#form" class="btn btn-purple">Приобрести</a>
-					</div>
-					<ul class="composition-product__list">
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-						<li class="composition-product__item">
-							<img src="./assets/img/doctor.png" alt="" width="100" height="100" />
-							<span>Lorem</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <title>LevelUp</title>
+</head>
 
-		<section class="feedback" id="feedback">
-			<div class="container">
-				<div class="wrapper">
-					<div class="slider-container">
-						<div class="slider-track">
-							<div class="feedback-container">
-								<div class="feedback-item">
-									<div class="feedback-author">
-										<img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
-										<h3>Иванов Петр Сергеевич</h3>
-									</div>
-									<blockquote class="feedback-content">
-										<p>
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
-											consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
-											mollitia exercitationem quis debitis facilis. Libero similique voluptate
-											labore quisquam porro!
-										</p>
-									</blockquote>
-								</div>
-							</div>
-							<div class="feedback-container">
-								<div class="feedback-item">
-									<div class="feedback-author">
-										<img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
-										<h3>Большаков Тимофей Матвеевич</h3>
-									</div>
-									<blockquote class="feedback-content">
-										<p>
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
-											consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
-											mollitia exercitationem quis debitis facilis. Libero similique voluptate
-											labore quisquam porro!
-										</p>
-									</blockquote>
-								</div>
-							</div>
-							<div class="feedback-container">
-								<div class="feedback-item">
-									<div class="feedback-author">
-										<img src="./assets/img/doctor.png" width="133" height="133" alt="Иванов Петр" />
-										<h3>Кузнецов Богдан Арсентьевич</h3>
-									</div>
-									<blockquote class="feedback-content">
-										<p>
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
-											consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
-											mollitia exercitationem quis debitis facilis. Libero similique voluptate
-											labore quisquam porro!
-										</p>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-btn">
-						<button class="btn btn-prev">Prev</button>
-						<button class="btn btn-next">Next</button>
-					</div>
-				</div>
-			</div>
-		</section>
+<body>
+  <header class="main-header">
+    <div class="header-body">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">Level Up</div>
+          <nav class="main-menu">
+            <ul>
+              <li><a href="#composition-product">Состав</a></li>
+              <li><a href="#feedback">Отзывы</a></li>
+              <li><a href="#description">Описание</a></li>
+              <li><a href="#form">Заказать</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="promo">
+          <div class="promo-text">
+            <div class="promo-title">
+              <span>Препарат</span>
+              <p class="promo-logo">LevelUp</p>
+            </div>
+            <p class="promo-feature">Характеристика:</p>
+            <ul class="feature-list">
+              <li class="feature-item">Lorem ipsum dolor</li>
+              <li class="feature-item">Lorem ipsum dolor</li>
+              <li class="feature-item">Lorem ipsum dolor</li>
+            </ul>
+            <a href="#form" class="btn btn-purple">Приобрести</a>
+          </div>
+          <div class="promo-img">
+            <img src="./assets/img/prod.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <video preload="auto" autoplay loop muted class="bgvideo" id="bgvideo">
+      <source src="./assets/video/video.mp4" type="video/mp4" />
+    </video>
+  </header>
 
-		<section class="description" id="description">
-			<div class="container">
-				<div class="description-block">
-					<div class="description-img">
-						<img src="./assets/img/prod.png" alt="" />
-					</div>
-					<div class="description-text">
-						<blockquote class="description-content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita quae
-								facilis suscipit minima corrupti enim nostrum possimus vero nobis incidunt similique
-								cupiditate, quidem sint sequi non natus quos. Nam. Earum nihil, laudantium dolor
-								fugiat dolorum unde cum harum! Adipisci quae nemo nobis sunt, hic architecto alias
-								rerum magni doloremque rem repellat eveniet, officiis vero laboriosam? Fugiat ipsum
-								id iure? Eum, sequi odit adipisci debitis amet officia, alias ab, itaque sint non
-								minima voluptates soluta? Non libero assumenda odio officiis ipsam, eligendi hic
-								minus error eveniet? Saepe voluptatem atque dolor!
-							</p>
-						</blockquote>
-						<a href="#form" class="btn btn-purple">Приобрести</a>
-					</div>
-				</div>
-				<div class="description-footer">
-					<p class="description-footer__text">
-						Характеристика: Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor
-					</p>
-				</div>
-			</div>
-		</section>
+  <section class="composition-product" id="composition-product">
+    <div class="container">
+      <div class="composition-product__block">
+        <ul class="composition-product__list">
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+        </ul>
+        <div class="composition-product__img">
+          <div class="composition-product__line-img">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+            <img src="/assets/img/prod.png" />
+            <div class="line line4"></div>
+            <div class="line line5"></div>
+            <div class="line line6"></div>
+          </div>
+          <a href="#form" class="btn btn-purple">Приобрести</a>
+        </div>
+        <ul class="composition-product__list">
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+          <li class="composition-product__item">
+            <img src="./assets/img/doctor.png" alt="" />
+            <span>Lorem</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-		<section class="orderForm" id="form">
-			<div class="container">
-				<div class="orderForm-top">
-					<h1 class="logo">LevelUp</h1>
-					<div class="timer">
-						<div class="timer__items">
-							<div class="timer__item timer__hours">00</div>
-							<div class="timer__item timer__minutes">30</div>
-							<div class="timer__item timer__seconds">00</div>
-						</div>
-					</div>
-				</div>
-				<div class="orderForm-bottom">
-					<div class="orderForm-left">
-						<div class="orderForm-img">
-							<img src="./assets/img/prod.png" alt="" />
-						</div>
-						<div class="orderForm-price">
-							<span class="orderForm-newPrice">13.000₽</span>
-							<span class="orderForm-oldPrice">29.000₽</span>
-						</div>
-					</div>
-					<form class="contacts-form" action="" method="post">
-						<table>
-							<tr>
-								<td class="title">
-									<label for="fullname">ФИО:</label>
-								</td>
-								<td class="field">
-									<input
-										type="text"
-										id="fullname"
-										name="fullname"
-										placeholder="Представьтесь, пожалуйста" />
-								</td>
-							</tr>
-							<tr>
-								<td class="title">
-									<label for="phone">Телефон:</label>
-								</td>
-								<td class="field">
-									<input
-										type="tel"
-										id="phone"
-										name="phone"
-										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-										placeholder="Укажите номер телефона" />
-								</td>
-							</tr>
-							<tr>
-								<td class="title"></td>
-								<td class="field">
-									<input type="submit" class="btn btn-form" value="Отправить" />
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
-			</div>
-		</section>
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <div class="wrapper">
 
-		<script src="./assets/js/slider.js"></script>
-		<script src="./assets/js/timer.js"></script>
-	</body>
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Иванов Петр Сергеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Большаков Тимофей Матвеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Кузнецов Богдан Арсентьевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Иванов Петр Сергеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Большаков Тимофей Матвеевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-container">
+              <div class="feedback-item">
+                <div class="feedback-author">
+                  <img src="./assets/img/doctor.png" alt="Иванов Петр" />
+                  <h3>Кузнецов Богдан Арсентьевич</h3>
+                </div>
+                <blockquote class="feedback-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum error
+                    consequatur quasi eligendi, dignissimos quas esse vel nisi reprehenderit
+                    mollitia exercitationem quis debitis facilis. Libero similique voluptate
+                    labore quisquam porro!
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="description" id="description">
+    <div class="container">
+      <div class="description-block">
+        <div class="description-img">
+          <img src="./assets/img/prod.png" alt="" />
+        </div>
+        <div class="description-text">
+          <blockquote class="description-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita quae
+              facilis suscipit minima corrupti enim nostrum possimus vero nobis incidunt similique
+              cupiditate, quidem sint sequi non natus quos. Nam. Earum nihil, laudantium dolor
+              fugiat dolorum unde cum harum! Adipisci quae nemo nobis sunt, hic architecto alias
+              rerum magni doloremque rem repellat eveniet, officiis vero laboriosam? Fugiat ipsum
+              id iure? Eum, sequi odit adipisci debitis amet officia, alias ab, itaque sint non
+              minima voluptates soluta? Non libero assumenda odio officiis ipsam, eligendi hic
+              minus error eveniet? Saepe voluptatem atque dolor!
+            </p>
+          </blockquote>
+          <a href="#form" class="btn btn-purple">Приобрести</a>
+        </div>
+      </div>
+      <div class="description-footer">
+        <p class="description-footer__text">
+          Характеристика: Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="orderForm" id="form">
+    <div class="container">
+      <div class="orderForm-top">
+        <h1 class="logo">LevelUp</h1>
+        <div class="timer">
+          <div class="timer__items">
+            <div class="timer__item timer__hours">00</div>
+            <div class="timer__item timer__minutes">30</div>
+            <div class="timer__item timer__seconds">00</div>
+          </div>
+        </div>
+      </div>
+      <div class="orderForm-bottom">
+        <div class="orderForm-left">
+          <div class="orderForm-img">
+            <img src="./assets/img/prod.png" alt="" />
+          </div>
+          <div class="orderForm-price">
+            <span class="orderForm-newPrice">13.000₽</span>
+            <span class="orderForm-oldPrice">29.000₽</span>
+          </div>
+        </div>
+        <form class="contacts-form" action="" method="post">
+          <table>
+            <tr>
+              <td class="title">
+                <label for="fullname">ФИО:</label>
+              </td>
+              <td class="field">
+                <input type="text" id="fullname" name="fullname" placeholder="Представьтесь, пожалуйста" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="phone">Телефон:</label>
+              </td>
+              <td class="field">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Укажите номер телефона" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title"></td>
+              <td class="field">
+                <input type="submit" class="btn btn-form" value="Отправить" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/timer.js"></script>
+</body>
 </html>
