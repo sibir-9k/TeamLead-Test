@@ -1,5 +1,5 @@
 let position = 0;
-const slidesToShow = 2; // Сколько эл-ов показывать
+const slidesToShow = 1; // Сколько эл-ов показывать
 const slidesToScroll = 1; // Сколько эл-ов скролить
 
 const container = document.querySelector('.slider-container');
@@ -9,11 +9,11 @@ const btnNext = document.querySelector('.btn-next');
 const items = document.querySelectorAll('.feedback-container');
 
 const itemsCount = items.length;
-const itemWidth = (container.clientWidth / slidesToShow)-25;
+const itemWidth = (container.clientWidth / slidesToShow) / 2  
 const movePosition = slidesToScroll * itemWidth;
 
 items.forEach((item) => {
-  item.style.minWidth = `${itemWidth}px`;
+  item.style.minWidth = `${itemWidth}px`; // минимальная ширина карточки
 });
 
 btnNext.addEventListener('click', () => {

@@ -12,8 +12,8 @@ const onStartTimerCallback = () => {
 	}
 	timerId = setInterval(() => {
 		secondsLeft -= 1;
-		$minutes.textContent = Math.floor(secondsLeft / 60);
-		$seconds.textContent = secondsLeft % 60;
+		$minutes.textContent = secondsLeft > 0 ? Math.floor(secondsLeft / 60) : 0;
+    $seconds.textContent = secondsLeft % 60 < 10 ? '0' + (secondsLeft % 60) : secondsLeft % 60;
 		if (secondsLeft <= 0) {
 			clearInterval(timerId);
 		}
