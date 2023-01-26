@@ -1,58 +1,31 @@
-let position = 0;
-const slidesToShow = 1; // Сколько эл-ов показывать
-const slidesToScroll = 1; // Сколько эл-ов скролить
-
-const container = document.querySelector('.slider-container');
-const track = document.querySelector('.slider-track');
-const btnPrev = document.querySelector('.btn-prev');
-const btnNext = document.querySelector('.btn-next');
-const items = document.querySelectorAll('.feedback-container');
-
-const itemsCount = items.length;
-const itemWidth = (container.clientWidth / slidesToShow) / 2  
-const movePosition = slidesToScroll * itemWidth;
-
-items.forEach((item) => {
-  item.style.minWidth = `${itemWidth}px`; // минимальная ширина карточки
+$('.slider-track').slick({
+	infinite: false,
+	speed: 300,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true,
+			},
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
 });
-
-btnNext.addEventListener('click', () => {
-  const itemLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-  position -= itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
-
-  setPosition();
-  checkBtns();
-});
-
-btnPrev.addEventListener('click', () => {
-  const itemLeft = Math.abs(position) / itemWidth;
-  position += itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
-
-  setPosition();
-  checkBtns();
-});
-
-const setPosition = () => {
-  track.style.transform = `translateX(${position}px)`;
-};
-
-const checkBtns = () => {
-  btnPrev.disabled = position === 0;
-
-  if(position === 0){
-    btnPrev.classList.add('disabled')
-  }else{
-    btnPrev.classList.remove('disabled')
-    btnPrev.disabled = false
-  }
-  
-  btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-  if( position <= -(itemsCount - slidesToShow) * itemWidth){
-    btnNext.classList.add('disabled')
-  }else{
-    btnNext.classList.remove('disabled')
-    btnNext.disabled = false
-  }
-};
-
-checkBtns()
