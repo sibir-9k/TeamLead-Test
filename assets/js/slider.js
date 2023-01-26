@@ -10,8 +10,6 @@ const items = document.querySelectorAll('.feedback-container');
 
 const itemsCount = items.length;
 const itemWidth = (container.clientWidth / slidesToShow)-25;
-console.log(container.clientWidth)
-console.log(itemWidth)
 const movePosition = slidesToScroll * itemWidth;
 
 items.forEach((item) => {
